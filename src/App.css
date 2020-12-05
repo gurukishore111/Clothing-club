@@ -4,3 +4,8 @@ body {
   font-family: "Josefin Sans", sans-serif;
   padding: 20px 60px;
 }
+
+a {
+  text-decoration: none;
+  color: gray;
+}
