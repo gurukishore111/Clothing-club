@@ -26,8 +26,8 @@ export default class SignIn extends Component {
                 <h2>I already have an account</h2>
                 <span>Sign in with your email and password</span>
                 <form onSubmit={this.handleSubmit}>
-                    <FromInput name="email" label="Email" value={this.state.email} handleChange={this.handleChange} required />
-                    <FromInput name="password" label="Password" value={this.state.password} required handleChange={this.handleChange} />
+                    <FromInput name="email" type="email" label="Email" value={this.state.email} handleChange={this.handleChange} required />
+                    <FromInput name="password" type="password" label="Password" value={this.state.password} required handleChange={this.handleChange} />
                     <div className="buttons">
                     <CustomButton type="submit">Sign in</CustomButton>
                     <CustomButton onClick={signInwithGoogle} isGoogleSignIn >Sign in with Google</CustomButton>
