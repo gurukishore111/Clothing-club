@@ -9,3 +9,12 @@ a {
   text-decoration: none;
   color: gray;
 }
+
+.google-sign-in:hover {
+  background-color: #4285f4;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
