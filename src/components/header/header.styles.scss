@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Jost&family=Major+Mono+Display&family=Montserrat+Alternates&display=swap");
 .header {
   height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  font-family: "Jost", sans-serif;
 
   .logo-container {
     height: 100%;
