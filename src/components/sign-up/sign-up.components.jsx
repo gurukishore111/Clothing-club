@@ -32,7 +32,7 @@ export default class Signup extends Component {
                 confirmPassword:'',
             })
         } catch (error) {
-            console.log(error)
+            alert(error.message)
         }
     } 
 

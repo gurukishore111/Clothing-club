@@ -19,7 +19,7 @@ export default class SignIn extends Component {
          await auth.signInWithEmailAndPassword(email,password); 
          this.setState({email:'',password:''})
         } catch (error) {
-         console.log(error)
+         alert(error.message)
         }
     }
     handleChange = e =>{
