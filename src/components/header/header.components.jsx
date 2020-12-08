@@ -19,22 +19,23 @@ function Header({currentUser,hidden}) {
              </Link>
              <div className="options">
                <Link className="option" to="/shop">
-                 SHOP
+             <span className="emoji">🛍️</span> SHOP
                </Link>
                <Link className="option" to="/contact">
-                 CONTACT
+             <span className="emoji">📝</span> CONTACT
                </Link>
                {
                  currentUser ? 
-                 (<div className="option" style={{color:"gray"}} onClick={() => auth.signOut()} >
-                    SIGN OUT
-                 </div>)
+                 (<><div className="option" style={{color:"gray"}} onClick={() => auth.signOut()} >
+                  <span className="emoji">🔑</span> SIGN OUT
+                 </div>
+                 <CartIcon /></>)
                   :
-               ( <Link className="option" style={{color:"gray"}} to="/signin">
-                  SIGN IN
-               </Link>)
+               ( <><Link className="option" style={{color:"gray"}} to="/signin">
+                 <span className="emoji">🔑</span>  SIGN IN <span style={{fontSize:10}}>(😊To continue shopping..)</span>
+               </Link>
+                </>)
                }
-               <CartIcon />
              </div>
              {
                hidden ? null :

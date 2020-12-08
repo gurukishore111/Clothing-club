@@ -3,6 +3,14 @@
   flex-direction: column;
   margin-bottom: 30px;
 
+  a {
+    color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   .title {
     font-size: 28px;
     margin-bottom: 25px;
