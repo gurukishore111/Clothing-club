@@ -12,6 +12,8 @@ import { selectCurrentUser } from './redux/user/user.selectors';
 import { createStructuredSelector } from 'reselect';
 import CheckOut from './pages/checkout/checkout.components';
 import CollectionPage from './pages/collection/collection.components';
+import { WithSpinner } from './components/with-spinner/with-spinner.components';
+const CollectionPageSpinner = WithSpinner(CollectionPage);
 
 class App extends Component { 
   unsubscribeFromAuth = null; 
@@ -42,10 +44,9 @@ class App extends Component {
       <Header />
       <Switch>   
         <Route exact path="/" component={HomePage}/>
-        <Route exact path="/shop" component={ShopPage}/>
+        <Route  path="/shop" component={ShopPage}/>
         <Route exact path="/checkout" component={CheckOut}/>
         <Route exact path="/signin" render={() =>this.props.currentUser ? < Redirect to="/" /> : <SignInAndSignUpPage />} />
-        <Route exact path="/shop/:collectionId" component={CollectionPage} />
       </Switch>
     </div>
     )
