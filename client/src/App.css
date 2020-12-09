@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 20px 60px;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.google-sign-in:hover {
+  background-color: #4285f4;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+  .directory-menu {
+    width: 150% !important;
+  }
+  .menu-item.large {
+    height: 240px !important;
+  }
+  .checkout-item {
+    width: 150% !important;
+  }
+  .checkout-page .checkout-header {
+    width: 150% !important;
+  }
+  .sign-in-and-sign-up {
+    display: flex !important;
+    margin-left: 12px !important;
+    flex-direction: column !important;
+  }
+}
